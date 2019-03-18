@@ -1,0 +1,79 @@
+.horizontalContainer {
+    margin: 50px;
+    flex-direction: row;
+}
+
+#boxesContainer {
+    padding: 10px;
+    background-color: rgb(128, 128, 128);
+    align-self: flex-start;
+    flex-shrink: 0;
+}
+
+.editorControlDisplayer .controlField {
+    flex: 1;
+}
+
+.focusButton {
+    max-height: 20px;
+}
+
+.unity-list-view {
+    --unity-item-height: 20;
+}
+
+#tree-view
+{
+    
+}
+
+.top-bar-field
+{
+    align-self: center;
+    flex-grow: 1;
+    /*width: 150px;*/
+}
+
+#top-bar-button-column
+{
+    width: 50px;
+    flex-direction: column;
+}
+
+.top-bar-button
+{
+    -unity-text-align: middle-center;
+    /*width: 50px;*/
+    flex-grow: 1;
+
+    border-right-width: 1px;
+    border-color: #a3a3a3;
+    background-color: #cbcbcb;
+}
+
+.top-bar-button:hover
+{
+    background-color: #bfbfbf;
+}
+
+.top-bar-button:active
+{
+    background-color: #afafaf;
+}
+
+#top-bar-spacer
+{
+    flex-grow: 1;
+}
+
+#top-bar
+{
+    /*height: 25.24px;*/
+    
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #DDDDDD;
+    border-top: 1px;
+    border-bottom: 1px;
+    border-color: #919191;
+}

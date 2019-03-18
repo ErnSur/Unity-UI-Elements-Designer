@@ -1,0 +1,5 @@
+<UXML xmlns:ui="UnityEngine.UIElements.New">
+  <Column name="preview-root">
+    <Column name="Column" />
+  </Column>
+</UXML>
