@@ -1,2 +1,3 @@
-# Unity-UI-Elements-Designer
-UI Elements Drag-N-Drop Solution
+# Unity-UI-Elements-Extensions
+* Editor Designer
+* New Visual Elements
