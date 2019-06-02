@@ -140,6 +140,14 @@ namespace UIDesigner
 
             public static readonly Lazy<GUIStyle> RootRowStyle =
                 new Lazy<GUIStyle>(() => new GUIStyle("TV LineBold") {alignment = TextAnchor.MiddleLeft});
+
+            public static Color RootRowBackgroundColor => EditorGUIUtility.isProSkin
+                ? new Color(0.3f, 0.3f, 0.3f)
+                : new Color(.86f, .86f, .86f);
+            
+            public static Color RootRowShadowColor => EditorGUIUtility.isProSkin
+                ? new Color(0.1f, 0.1f, 0.1f)
+                : new Color(.56f, .56f, .56f);
         }
 
         protected override void RowGUI(RowGUIArgs args)
@@ -157,9 +165,9 @@ namespace UIDesigner
         protected override void BeforeRowsGUI()
         {
             var rootRowRect = new Rect(0, 0, _onGUIRect.width, 17);
-            EditorGUI.DrawRect(rootRowRect, new Color(.86f, .86f, .86f));
+            EditorGUI.DrawRect(rootRowRect, Styles.RootRowBackgroundColor);
             rootRowRect.yMin = rootRowRect.height - 1;
-            EditorGUI.DrawRect(rootRowRect, new Color(.56f, .56f, .56f));
+            EditorGUI.DrawRect(rootRowRect, Styles.RootRowShadowColor);
             base.BeforeRowsGUI();
         }
 

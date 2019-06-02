@@ -47,18 +47,18 @@
     flex-grow: 1;
 
     border-right-width: 1px;
-    border-color: #a3a3a3;
-    background-color: #cbcbcb;
+    border-color: #383838;
+    background-color: #444444;
 }
 
 .top-bar-button:hover
 {
-    background-color: #bfbfbf;
+    background-color: #444444;
 }
 
 .top-bar-button:active
 {
-    background-color: #afafaf;
+    background-color: #383838;
 }
 
 #top-bar-spacer
@@ -72,8 +72,8 @@
     
     flex-direction: row;
     justify-content: flex-end;
-    background-color: #DDDDDD;
+    background-color: #444444;
     border-top: 1px;
     border-bottom: 1px;
-    border-color: #919191;
+    border-color: #383838;
 }

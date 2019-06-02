@@ -25,7 +25,6 @@ namespace UnityEngine.UIElements.New
             style.flexDirection = FlexDirection.Column;
             style.flexGrow = 1;
             style.flexShrink = 0;
-            style.flexBasis = 1;
         }
     }
 
@@ -49,6 +48,23 @@ namespace UnityEngine.UIElements.New
         public abstract void BindData(TData data);
     }
 
+    public class ExpandingFoldout : Foldout
+    {
+        public ExpandingFoldout()
+        {
+            this.RegisterValueChangedCallback(OnValueChange);
+
+            contentContainer.style.marginLeft = 0;
+            
+            style.flexGrow = value ? 1 : 0;
+
+            void OnValueChange(ChangeEvent<bool> e)
+            {
+                style.flexGrow = e.newValue ? 1 : 0;
+            }
+        }
+    }
+    
     public class LabelWithRename : Label
     {
         private readonly RenameField _renameField;
